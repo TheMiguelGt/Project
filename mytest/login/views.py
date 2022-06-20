@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def login(request):
-    return render(request, 'login.html')
+def choose(request):
+    return render(request, 'choose.html')
+
+def teach(request):
+    return render(request, 'teach.html')

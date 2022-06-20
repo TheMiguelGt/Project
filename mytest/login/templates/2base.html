@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {%  block title %}
+        {%endblock%}
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen and(max-width:2000px)" href="{% static 'css/main.css' %}">
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            nav{
+                height: 60px;
+                background: #222;
+                display: flex;
+                align-items: center;
+                
+                padding: 0px 13% 0px 13%;
+            }
+            .cent{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .cent-logo{
+                margin: 0 auto;
+            }
+            nav .cent{
+                font-size: 33px;
+                color: #fff;
+                font-weight: 600;
+            }
+            a{
+                text-decoration:none;
+                color: #fff;
+            }
+            .chooose-cont{
+                padding: 2.8% 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            #cont-divs{
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                width: 450px;
+            }
+            #choose-title{
+                font-size: 30px;
+                color: #000;
+                font-weight: 530;
+            }
+            #cont-divs{
+                /*border: solid 2px;*/
+                height: 650px;
+                padding: 10px 0px;
+            }
+            .type-account{
+                width: 100%;
+                white-space: normal;
+                border: 1px solid #D0D0D0;
+                background-color: #D0D0D0;
+                opacity: 0.4;
+                border-radius: 12px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                padding: 1px;
+                height: 150px;
+                color: #000;
+            }
+            .btn-teach:hover{
+                border: 3px solid #E79441;
+                opacity: 0.4;
+                color: #E79441;
+            }
+            .btn-student:hover{
+                border: 3px solid #41E7CB;
+                opacity: 0.4;
+                color: #41E7CB;
+            }
+            .btn-familiar:hover{
+                border: 3px solid #71E741;
+                opacity: 0.4;
+                color: #71E741;
+            }
+              
+        </style>
+        <script type="JavaScript">
+            function teachPage() {
+                location.replace("https://www.w3schools.com")
+              }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div class="cent">
+                <div class="cent-logo">
+                    <a class="" href="{% url 'home' %}">Page Name</a>
+                </div>
+            </div>
+        </nav>
+        {% block choose%}
+        {%endblock%}
+    </body>
+</html>

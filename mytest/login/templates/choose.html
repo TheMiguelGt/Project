@@ -1,0 +1,26 @@
+{% extends '2base.html' %}
+{%  block title %}
+    <title>Choose Account</title>
+{%endblock%}
+{% block choose%}
+<form>
+    <div class="chooose-cont">
+        <div id="cont-div">
+            <div style="line-height: 42px; text-align: center;">
+                <p id="choose-title">Choose the account</p>
+            </div>
+            <div id="cont-divs">
+                <button class="type-account btn-teach" id="btn-teach"onClick="location.href = '/teach'">
+                    <h3>Teacher</h3>
+                </button>
+                <button class="type-account btn-student">
+                    <h3>Student</h3>
+                </button>
+                <button class="type-account btn-familiar">
+                    <h3>Familiar</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
