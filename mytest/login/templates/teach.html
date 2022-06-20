@@ -2,3 +2,40 @@
 {%  block title %}
     <title>Teach Account</title>
 {%endblock%}
+{% block teachForm %}
+<form action="" mathod="POST">
+    <div class="chooose-cont">
+        <div id="cont-div">
+            <div style="line-height: 42px; text-align: center; width: 560px; padding: 0px 20px;">
+                <div style="text-align: left;">
+                    <a href="{% url 'choose acount' %}" class="ret-color"><  Back</a>
+                </div>
+                <p id="choose-title">Register as a teacher</p>
+                <div class="info-account">
+                    <span >Register as a teacher, there you can assign activities, you just need to fill in the fields and generate a class code<span>
+                </div>
+            </div>
+            <div class="cont-divs">
+                <input type="text" class="txt-input" placeholder="Email" maxlength="40"></input>          
+                <input type="text" class="txt-input" placeholder="Password" maxlength="20"></input>       
+                <input type="text" class="txt-input" placeholder="Confirm password" maxlength="20"></input>   
+                <input type="text" class="txt-input txt-user" placeholder="User name" maxlength="18"></input>      
+                <input type="text" class="txt-input txt-code" placeholder="Class code (Optional)" maxlength="10"></input>   
+                <input type="button" class="btn-register" value="Create account"></input>
+                <br>
+                <p style="font-weight: 450;font-size: 14px; margin-top: 10px;
+                margin-bottom: 55px; "><span>do you have an account?  <a hreft=""" class="txt-under"> Log in</a></span></p>
+            </div>
+            <hr style="width:45%; float:left;">
+            
+            <hr style="width:45%; float:right;">
+            <br>
+            <div class="cont-divs">
+                <input type="button" class="btn-social btn-google" value="Register with Google"></input>  
+                <input type="button" class="btn-social btn-facebook" value="Register with Facebook"></input>  
+                <input type="button" class="btn-social btn-apple" value="Register with Apple"></input>  
+            </div>
+        </div>
+    </div>
+</form>
+{%endblock%}
