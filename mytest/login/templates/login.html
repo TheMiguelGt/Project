@@ -4,6 +4,36 @@
 {%endblock%}
 {% block login%}
 <form action="" mathod="POST">
-    
+    <div class="chooose-cont">
+        <div id="cont-div">
+            <div style="line-height: 42px; text-align: center; width: 560px; padding: 0px 20px;">
+                <div style="text-align: left;">
+                    <a href="{% url 'choose' %}" class="ret-color"><  Back</a>
+                </div>
+                <p id="choose-title">Start now with your account</p>
+                <div class="info-account">
+                    <span >Register your family account, here you can access through a code and filling in the data to know about your child's school activities.<span>
+                </div>
+            </div>
+            <div class="cont-login"">
+                <input type="text" class="txt-input" placeholder="Email or User name" maxlength="40"></input>          
+                <input type="password" class="txt-input" placeholder="Password" maxlength="20"></input>        
+                <input type="button" class="btn-enter" value="Login"></input>
+                <br>
+                <p style="font-weight: 450;font-size: 14px; margin-top: 10px;
+                margin-bottom: 55px; "><span>i don't remember <a class="txt-under" href="{% url 'login' %}">my password</a></span></p>
+            </div>
+            <hr style="width:45%; float:left;">
+            <hr style="width:45%; float:right;">
+            <br>
+            <div class="cont-login">
+                <input type="button" class="btn-social btn-google" value="Login with Google"></input>  
+                <input type="button" class="btn-social btn-facebook" value="Login with Facebook"></input>  
+                <input type="button" class="btn-social btn-apple" value="Login with Apple"></input>  
+                <p style="font-weight: 450;font-size: 14px; margin-top: 10px;
+                margin-bottom: 55px; "><span>i dont have an <a class="txt-under" href="{% url 'choose' %}">account</a></span></p>
+            </div>
+        </div>
+    </div>
 </form>
 {% endblock %}

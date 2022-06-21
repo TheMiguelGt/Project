@@ -7,5 +7,5 @@ from . import views
 
 #config url 
 urlpatterns = [
-    path('login', views.login, name='login'),
+    path('', views.login, name='login'),
 ]
