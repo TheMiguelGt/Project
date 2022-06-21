@@ -1,27 +1,27 @@
-{% extends '2base.html' %}
+{% extends '3base.html' %}
 {%  block title %}
     <title>Teach Account</title>
 {%endblock%}
-{% block teachForm %}
+{% block learnForm %}
 <form action="" mathod="POST">
     <div class="chooose-cont">
         <div id="cont-div">
             <div style="line-height: 42px; text-align: center; width: 560px; padding: 0px 20px;">
                 <div style="text-align: left;">
-                    <a href="{% url 'choose acount' %}" class="ret-color"><  Back</a>
+                    <a href="{% url 'choose' %}" class="ret-color"><  Back</a>
                 </div>
-                <p id="choose-title">Register as a teacher</p>
+                <p id="choose-title">Register as a student</p>
                 <div class="info-account">
-                    <span >Register as a teacher, there you can assign activities, you just need to fill in the fields and generate a class code<span>
+                    <span >Register as a student, it's easy, you just have to fill in the fields and have the class code, provided by the teacher.<span>
                 </div>
             </div>
             <div class="cont-divs">
+                <input type="text" class="txt-input txt-code" placeholder="Class code " maxlength="10"></input>  
+                <input type="text" class="txt-input txt-user" placeholder="User name" maxlength="18"></input>       
                 <input type="text" class="txt-input" placeholder="Email" maxlength="40"></input>          
-                <input type="text" class="txt-input" placeholder="Password" maxlength="20"></input>       
-                <input type="text" class="txt-input" placeholder="Confirm password" maxlength="20"></input>   
-                <input type="text" class="txt-input txt-user" placeholder="User name" maxlength="18"></input>      
-                <input type="text" class="txt-input txt-code" placeholder="Class code (Optional)" maxlength="10"></input>   
-                <input type="button" class="btn-register" value="Create account"></input>
+                <input type="password" class="txt-input" placeholder="Password" maxlength="20"></input>       
+                <input type="password" class="txt-input" placeholder="Confirm password" maxlength="20"></input>   
+                <input type="button" class="btn-registerS" value="Create account"></input>
                 <br>
                 <p style="font-weight: 450;font-size: 14px; margin-top: 10px;
                 margin-bottom: 55px; "><span>do you have an account?  <a hreft=""" class="txt-under"> Log in</a></span></p>

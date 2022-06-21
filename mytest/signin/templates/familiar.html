@@ -1,4 +1,4 @@
-{% extends '2base.html' %}
+{% extends '3base.html' %}
 {%  block title %}
     <title>Familiar Account</title>
 {%endblock%}
@@ -8,17 +8,17 @@
         <div id="cont-div">
             <div style="line-height: 42px; text-align: center; width: 560px; padding: 0px 20px;">
                 <div style="text-align: left;">
-                    <a href="{% url 'choose acount' %}" class="ret-color"><  Back</a>
+                    <a href="{% url 'choose' %}" class="ret-color"><  Back</a>
                 </div>
                 <p id="choose-title">Register as a familiar</p>
                 <div class="info-account">
-                    <span >Register your family account, here you can access through a code and filling in the data to know about your child's school activities<span>
+                    <span >Register your family account, here you can access through a code and filling in the data to know about your child's school activities.<span>
                 </div>
             </div>
-            <div class="cont-divs">
+            <div class="cont-divs" style="height: 305px;">
                 <input type="text" class="txt-input" placeholder="Email" maxlength="40"></input>          
-                <input type="text" class="txt-input" placeholder="Password" maxlength="20"></input>       
-                <input type="text" class="txt-input" placeholder="Confirm password" maxlength="20"></input>        
+                <input type="password" class="txt-input" placeholder="Password" maxlength="20"></input>       
+                <input type="password" class="txt-input  mini-pass" placeholder="Confirm password" maxlength="20"></input>        
                 <input type="text" class="txt-input txt-code" placeholder="Class code" maxlength="10"></input>   
                 <input type="button" class="btn-registerF" value="Create account"></input>
                 <br>
